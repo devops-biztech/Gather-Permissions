@@ -7,6 +7,9 @@
 
 .EXAMPLE
     .\gather_permissions.ps1 "C:\Path\To\Folder"
+
+.EXAMPLE
+    .\gather_permissions.ps1 "C:\Path\To\Folder" yes
 #>
 param (
     [string]$ParentFolderPath = $null,
