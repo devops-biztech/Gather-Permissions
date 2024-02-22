@@ -56,7 +56,7 @@ function ProcessThisItem {
                         Domain = $Domain;
                         IdentityReference = $_.IdentityReference.ToString();
                         FileSystemRights = $_.FileSystemRights.ToString();
-                        Current_Date = $currentDateTime
+                        Current_Date = $currentDateTime.ToString();
                     }
                     $hash.PSObject.TypeNames.Insert(0,'System.Management.Automation.PSCustomObject')
                     $hash
